@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "forest-sens"
+version = "0.1.0"
+description = ""
+authors = ["Florian Geiser <florian.geiser@motius.de>"]
+readme = "README.md"
+packages = [{include = "forest_sens"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+machine = "^0.0.1"
+pyserial = "^3.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+thingstream = "forest_sens.thingstream:main"
